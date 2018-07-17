@@ -10,7 +10,7 @@ Zilliqa - 运行Scilla合约的底层区块链平台，旨在实现可扩展性�
 
 ## 发展状况
 
-Scilla正在积极研究和开发中，因此本文档中部分描述可能会发生变化。Scilla目前提供了一个二进制解释器，它已集成到两个Scilla指定的Web-IDE中。[尝试Scilla](http://scilla.readthedocs.io/en/latest/scilla-trial.html#trial-label)对这两个IDE的功能进行了详细介绍。
+Scilla正在积极研究和开发中，因此本文档中部分描述可能会发生变化。Scilla目前提供了一个二进制解释器，它已集成到两个Scilla指定的Web-IDE中。[尝试Scilla](./Scilla/尝试Scilla.md)对这两个IDE的功能进行了详细介绍。
 
 请注意，Scilla尚未实现类型检查器，因此无法保证用Scilla编写的合约的类型安全性。
 
