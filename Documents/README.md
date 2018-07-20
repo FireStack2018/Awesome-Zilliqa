@@ -10,7 +10,7 @@ Zilliqa - 运行Scilla合约的底层区块链平台，旨在实现可扩展性�
 
 ## 发展状况
 
-Scilla正在积极研究和开发中，因此本文档中部分描述可能会发生变化。Scilla目前提供了一个二进制解释器，它已集成到两个Scilla指定的Web-IDE中。[尝试Scilla](./Zilliqa_cn/尝试Scilla.md)对这两个IDE的功能进行了详细介绍。
+Scilla正在积极研究和开发中，因此本文档中部分描述可能会发生变化。Scilla目前提供了一个二进制解释器，它已集成到两个Scilla指定的Web-IDE中。[尝试Scilla](./Zilliqa_cn/Scilla/尝试Scilla.md)对这两个IDE的功能进行了详细介绍。
 
 请注意，Scilla尚未实现类型检查器，因此无法保证用Scilla编写的合约的类型安全性。
 
@@ -43,13 +43,13 @@ Scilla正在积极研究和开发中，因此本文档中部分描述可能会�
 ## 目录
 
 - [关于](./README.md)
-- [Scilla设计原理](./Zilliqa_cn/Scilla设计原理.md)
-- [尝试Scilla](./Zilliqa_cn/尝试Scilla.md)
-- [Scilla入门](./Zilliqa_cn/Scilla入门.md)
+- [Scilla设计原理](./Zilliqa_cn/Scilla/Scilla设计原理.md)
+- [尝试Scilla](./Zilliqa_cn/Scilla/尝试Scilla.md)
+- [Scilla入门](./Zilliqa_cn/Scilla/Scilla入门.md)
 - Scilla进阶
-  - [Scilla合约架构](./Zilliqa_cn/Scilla合约架构.md)
-  - [原生数据类型&操作](./Zilliqa_cn/原生数据类型&操作.md)
-  - [代数数据类型](./Zilliqa_cn/代数数据类型.md)
-- [编译器介绍](./Zilliqa_cn/编译器介绍.md)
+  - [Scilla合约架构](./Zilliqa_cn/Scilla/Scilla合约架构.md)
+  - [原生数据类型&操作](./Zilliqa_cn/Scilla/原生数据类型&操作.md)
+  - [代数数据类型](./Zilliqa_cn/Scilla/代数数据类型.md)
+- [编译器介绍](./Zilliqa_cn/Scilla/编译器介绍.md)
 - [JSON-RPC接口文档](./JSON-RPC_cn/JSON-RPC_cn.md)
 
