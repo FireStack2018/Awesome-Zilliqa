@@ -1,6 +1,6 @@
 # Awesome-Zilliqa
 
-![Zilliqa](/Users/cyaolong/Desktop/zilliqa-img.jpeg)
+[Zilliqa](./Documents/img/zilliqa-img.jpeg)
 
 
 
@@ -101,7 +101,7 @@ Ziiliqa资料集合，包括区块链知识、Zilliqa官方资料、技术文档
 
 [*Reddit*](https://www.reddit.com/r/zilliqa/)
 
-[Gitter](https://gitter.im/Zilliqa/ecogrant)
+[*Gitter*](https://gitter.im/Zilliqa/ecogrant)
 
 
 
