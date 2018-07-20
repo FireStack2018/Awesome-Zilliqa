@@ -6,7 +6,7 @@
 
 - 有一个由合约的创建者初始化的不变变量 `owner`。该变量初始化后，其值就不能改变。`owner`的类型是 `Address`。
 - 有一个初始化为`""`的可变变量 `welcome_msg`，该变量为`String`类型。这里的可变性是指即使在部署合约之后也可以修改变量的值。
-- **只有`owner`**才能通过接口`setHello`修改`welcome_msg`。该接口需要`msg`（`String`类型）作为输入方，并允许`owner`设置发送给`msg`的 `welcome_msg`的值。
+- 只有`owner` 才能通过接口`setHello`修改`welcome_msg`。该接口需要`msg`（`String`类型）作为输入方，并允许`owner`设置发送给`msg`的 `welcome_msg`的值。
 - 有一个`getHello`接口可获取到`welcome_msg`。`getHello`不接收任何内容输入。
 
 ### 定义合约及（不）可变字段

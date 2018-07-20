@@ -90,7 +90,7 @@ curl -d '{
 | 参数    | 说明         |
 | ------- | ------------ |
 | params  | 账户地址     |
-| method  | "GetBalance" |
+| method  | "GetDsBlock" |
 | jsonrpc | "2.0"        |
 | id      | 1            |
 
