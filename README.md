@@ -1,6 +1,6 @@
 # Awesome-Zilliqa
 
-[Zilliqa](./Documents/img/zilliqa-img.jpeg)
+![Zilliqa](./Documents/img/zilliqa-img.jpeg)
 
 
 
