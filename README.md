@@ -4,87 +4,82 @@
 
 
 
-Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档、相关项目列表等。
+A curated list of awesome Zilliqa frameworks, libraries, and resources.
 
-* 区块链知识
+Click [here](./Documents/README.md) to read the Chinese documents, English documents are as follow.
 
-  * 术语
-  * 基本原理
+* Basics
 
-* 官方资料
+  * Terms
+  * Theory
 
-  * 基本介绍
-  * 技术文档
-  * 扶持计划
+* Documents
 
-* 项目列表
+  * Introduction
+  * Technical Docs
+  * Financial Grant
 
-  
-
-## 区块链知识
-
-* ### 术语表
-
-  * [区块链](http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html)
-
-  * [去中心化](http://m.sohu.com/a/224866452_100104403?from=groupmessage&isappinstalled=0)
-
-  * [侧链/子链/DAG/分片技术](https://blog.csdn.net/tiandiwuya/article/details/80289380)
-
-  * [加密货币](http://www.ruanyifeng.com/blog/2018/01/cryptocurrency-tutorial.html)
-
-  * [比特币](http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)
-
-  * [数字签名](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
-
-  * [糖果/空投](https://www.zhihu.com/question/263927879?from=groupmessage&isappinstalled=0)
-
-  * [空气币](https://zhuanlan.zhihu.com/p/34389359?from=groupmessage&isappinstalled=0)
-
-  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
-
-    
-
-* ### 基本原理
-
-  * [共识机制](https://zhuanlan.zhihu.com/p/32404771)
-  * [各种共识机制优缺点](https://blog.csdn.net/omnispace/article/details/80374731)
-  * [通证模型](https://www.sohu.com/a/221492990_466937)
-
-
-
-## 官方资料
-
-* ### 基本介绍
-
-  * [官网](https://zilliqa.com/)
-  * [博客](https://blog.zilliqa.com/@xinshu)
-  * [白皮书 v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+* Github
 
   
 
-* ### 技术文档
+## Basics
 
-  * #### 英文版
+* ### Terms
 
-    * [Zilliqa官方文档](http://scilla.readthedocs.io/en/latest/)
-    * [JSON-RPC](https://apidocs.zilliqa.com/#introduction)
-    * [Scilla语言论文](https://arxiv.org/pdf/1801.00687.pdf)
+  * [Blockchain](https://en.wikipedia.org/wiki/Blockchain)
 
-  * #### 中文版
+  * [Decentralization](https://en.wikipedia.org/wiki/Decentralization)
 
-    * [Zilliqa官方文档](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/Zilliqa_cn)
-    * [JSON-RPC](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/JSON-RPC_cn)
+  * [Concensus Mechanisms](https://medium.com/the-daily-bit/9-types-of-consensus-mechanisms-that-you-didnt-know-about-49ec365179da)
+
+  * [Sharding](https://medium.com/edchain/what-is-sharding-in-blockchain-8afd9ed4cff0)
+
+  * [Cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency)
+
+  * [Bitcoin](https://en.wikipedia.org/wiki/Bitcoin)
+
+  * [Digital Signature](https://en.wikipedia.org/wiki/Digital_signature)
+
+  * [Smart Contract](https://en.wikipedia.org/wiki/Smart_contract)
+
+  * [Token](https://en.bitcoinwiki.org/wiki/Token)
+
+  * [Mining](https://en.bitcoin.it/wiki/Mining)
 
     
 
-* ### 扶持计划
+* ### Theory
 
-  * [开发者扶持计划](https://blog.zilliqa.com/zilliqa%E7%94%9F%E6%80%81%E6%9E%84%E5%BB%BA%E8%B5%84%E5%8A%A9%E8%AE%A1%E5%88%92-c2ae1745e916)
+  * [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
+
+
+
+## Documents
+
+* ### Introduction
+
+  * [Official Website](https://zilliqa.com/)
+  * [Zilliqa Blog](https://blog.zilliqa.com/@xinshu)
+  * [Zilliqa Whitepaper v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+
+  
+
+* ### Technical Docs
+
+  * [Scilla-doc](http://scilla.readthedocs.io/en/latest/)
+  * [JSON-RPC](https://apidocs.zilliqa.com/#introduction)
+  * [SCILLA Technical paper](https://arxiv.org/pdf/1801.00687.pdf)
+
+  
+
+* ### Financial Grant
+
+  * [Financial Grant](https://blog.zilliqa.com/buildonzil-introducing-the-zilliqa-ecosystem-grant-programme-6ccb98892712)
 
     
 
-* ### 官方社区
+* ### Contact
   * [*Twitter*](https://twitter.com/zilliqa)
   * [*Slack*](https://invite.zilliqa.com/)
   * [*Telegram*](https://t.me/zilliqachat)
@@ -93,15 +88,15 @@ Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档
 
 
 
-## 项目列表
+## Github
 
-* ### 官方
+* ### Official Repository
 
   * [Zilliqa](https://github.com/Zilliqa)
 
 
 
-* ### SDK
+* ### Repositories of SDK
 
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
