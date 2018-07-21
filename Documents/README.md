@@ -1,55 +1,102 @@
-# Zilliqa官网文档中文版
+# Awesome-Zilliqa
 
-Scilla是一种智能合约中级语言的简称，它是为[Zilliqa](https://zilliqa.com/)而开发的。Scilla以智能合约的高安全性为设计理念。
+![Zilliqa](./img/zilliqa-img.jpeg)
 
-Scilla在智能合约的基础上加入了一个新的架构，通过在语言层面针对性修复已知漏洞，使应用程序更不易受到攻击。此外，Scilla的基础架构将使应用程序本身更安全并且易于进行形式验证。
 
-该语言的语法正逐步规范中，并将嵌进[Coq proof assistant](https://coq.inria.fr/) - 一种用于程序性能的机械化证明的最先进工具。Coq基于先进的依赖型理论，拥有大量的数学工具库。它先前已成功应用于实现认证（即完全机械验证）的编译器、并发和分布式应用程序、及区块链相关方面。
 
-Zilliqa - 运行Scilla合约的底层区块链平台，旨在实现可扩展性。它采用分片的思想来验证并发交易。Zilliqa有一种名为Zilling的token ，简称ZIL。Zilliqa上运行智能合约需要消耗ZIL。
+Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档、相关项目列表等。
 
-## 发展状况
+下为中文版，英文版点[此处](../README.md)进入。
 
-Scilla正在积极研究和开发中，因此本文档中部分描述可能会发生变化。Scilla目前提供了一个二进制解释器，它已集成到两个Scilla指定的Web-IDE中。[尝试Scilla](./Zilliqa_cn/Scilla/尝试Scilla.md)对这两个IDE的功能进行了详细介绍。
+* 区块链知识
 
-请注意，Scilla尚未实现类型检查器，因此无法保证用Scilla编写的合约的类型安全性。
+  * 术语
+  * 基本原理
 
-## Resources
+* 官方资料
 
-可以通过相关资源来了解Scilla和Zilliqa，如下：
+  * 基本介绍
+  * 技术文档
+  * 扶持计划
 
-- **Scilla**
+* 项目列表
 
-  [Scilla设计文档](https://arxiv.org/pdf/1801.00687.pdf)
+  
 
-  [ScillaPPT](https://drive.google.com/file/d/10gIef8jeoQ2h9kYInvU3s0i5B6Z9syGB/view)
+## 区块链知识
 
-  [Scilla语法](https://docs.zilliqa.com/scilla-grammar.pdf)
+* ### 术语表
 
-  [Scilla设计构思：第1部分（为什么我们需要一种新语言？）](https://blog.zilliqa.com/scilla-design-story-piece-by-piece-part-1-why-do-we-need-a-new-language-27d5f14ae661)
+  * [区块链](http://www.ruanyifeng.com/blog/2017/12/blockchain-tutorial.html)
 
-- **Zilliqa**
+  * [去中心化](http://m.sohu.com/a/224866452_100104403?from=groupmessage&isappinstalled=0)
 
-  [Zilliqa设计构思：第1部分（网络分片）](https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65)
+  * [侧链/子链/DAG/分片技术](https://blog.csdn.net/tiandiwuya/article/details/80289380)
 
-  [Zilliqa设计构思：第2部分（共识机制）](https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-2-consensus-protocol-e38f6bf566e3)
+  * [加密货币](http://www.ruanyifeng.com/blog/2018/01/cryptocurrency-tutorial.html)
 
-  [Zilliqa设计构思：第3部分（使共识更高效）](https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-3-making-consensus-efficient-7a9c569a8f0e)
+  * [比特币](http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)
 
-  [技术白皮书](https://docs.zilliqa.com/whitepaper.pdf)
+  * [数字签名](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
 
-  [Zilliqa技术常见问题](https://docs.zilliqa.com/techfaq.pdf)
+  * [糖果/空投](https://www.zhihu.com/question/263927879?from=groupmessage&isappinstalled=0)
 
-## 目录
+  * [空气币](https://zhuanlan.zhihu.com/p/34389359?from=groupmessage&isappinstalled=0)
 
-- [关于](./README.md)
-- [Scilla设计原理](./Zilliqa_cn/Scilla/Scilla设计原理.md)
-- [尝试Scilla](./Zilliqa_cn/Scilla/尝试Scilla.md)
-- [Scilla入门](./Zilliqa_cn/Scilla/Scilla入门.md)
-- Scilla进阶
-  - [Scilla合约架构](./Zilliqa_cn/Scilla/Scilla合约架构.md)
-  - [原生数据类型&操作](./Zilliqa_cn/Scilla/原生数据类型&操作.md)
-  - [代数数据类型](./Zilliqa_cn/Scilla/代数数据类型.md)
-- [编译器介绍](./Zilliqa_cn/Scilla/编译器介绍.md)
-- [JSON-RPC接口文档](./JSON-RPC_cn/JSON-RPC_cn.md)
+  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
 
+    
+
+* ### 基本原理
+
+  * [共识机制](https://zhuanlan.zhihu.com/p/32404771)
+  * [各种共识机制优缺点](https://blog.csdn.net/omnispace/article/details/80374731)
+  * [通证模型](https://www.sohu.com/a/221492990_466937)
+
+
+
+## 官方资料
+
+* ### 基本介绍
+
+  * [官网](https://zilliqa.com/)
+  * [博客](https://blog.zilliqa.com/@xinshu)
+  * [白皮书 v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+
+  
+
+* ### 技术文档
+
+  * [Zilliqa官方文档](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/Zilliqa_cn)
+  * [JSON-RPC](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/JSON-RPC_cn)
+
+  
+
+* ### 扶持计划
+
+  * [开发者扶持计划](https://blog.zilliqa.com/zilliqa%E7%94%9F%E6%80%81%E6%9E%84%E5%BB%BA%E8%B5%84%E5%8A%A9%E8%AE%A1%E5%88%92-c2ae1745e916)
+
+    
+
+* ### 官方社区
+  * [*Twitter*](https://twitter.com/zilliqa)
+  * [*Slack*](https://invite.zilliqa.com/)
+  * [*Telegram*](https://t.me/zilliqachat)
+  * [*Reddit*](https://www.reddit.com/r/zilliqa/)
+  * [*Gitter*](https://gitter.im/Zilliqa/ecogrant)
+
+
+
+## 项目列表
+
+* ### 官方
+
+  * [Zilliqa](https://github.com/Zilliqa)
+
+
+
+* ### SDK
+
+  * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
+  * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
+  * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)

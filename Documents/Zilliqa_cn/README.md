@@ -20,25 +20,15 @@ Scilla正在积极研究和开发中，因此本文档中部分描述可能会�
 
 - **Scilla**
 
-  [Scilla设计文档](https://arxiv.org/pdf/1801.00687.pdf)
-
-  [ScillaPPT](https://drive.google.com/file/d/10gIef8jeoQ2h9kYInvU3s0i5B6Z9syGB/view)
-
-  [Scilla语法](https://docs.zilliqa.com/scilla-grammar.pdf)
-
-  [Scilla设计构思：第1部分（为什么我们需要一种新语言？）](https://blog.zilliqa.com/scilla-design-story-piece-by-piece-part-1-why-do-we-need-a-new-language-27d5f14ae661)
+  [Scilla设计构思：第1部分（为什么我们需要一种新语言？）](https://blog.zilliqa.com/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6%E8%AF%AD%E8%A8%80scilla%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%95%85%E4%BA%8B-2c2927bfbc94)
 
 - **Zilliqa**
 
-  [Zilliqa设计构思：第1部分（网络分片）](https://blog.zilliqa.com/https-blog-zilliqa-com-the-zilliqa-design-story-piece-by-piece-part1-d9cb32ea1e65)
+  [Zilliqa设计构思：第1部分（网络分片）](https://blog.zilliqa.com/zilliqa%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9E%84%E6%80%9D-483839031cf0)
 
-  [Zilliqa设计构思：第2部分（共识机制）](https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-2-consensus-protocol-e38f6bf566e3)
+  [Zilliqa设计构思：第2部分（共识机制）](https://blog.zilliqa.com/zilliqa-%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9E%84%E6%80%9D-4ca8a3f61f99)
 
-  [Zilliqa设计构思：第3部分（使共识更高效）](https://blog.zilliqa.com/the-zilliqa-design-story-piece-by-piece-part-3-making-consensus-efficient-7a9c569a8f0e)
-
-  [技术白皮书](https://docs.zilliqa.com/whitepaper.pdf)
-
-  [Zilliqa技术常见问题](https://docs.zilliqa.com/techfaq.pdf)
+  [Zilliqa设计构思：第3部分（使共识更高效）](https://blog.zilliqa.com/zilliqa-%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%9E%84%E6%80%9D-e9a340a72bec)
 
 ## 目录
 
@@ -51,4 +41,5 @@ Scilla正在积极研究和开发中，因此本文档中部分描述可能会�
   - [原生数据类型&操作](./Scilla/原生数据类型&操作.md)
   - [代数数据类型](./Scilla/代数数据类型.md)
 - [编译器介绍](./Scilla/编译器介绍.md)
+- [JSON-RPC接口文档](../JSON-RPC_cn/JSON-RPC_cn.md)
 
