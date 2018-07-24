@@ -6,22 +6,9 @@
 
 Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档、相关项目列表等。
 
-下为中文版，英文版点[此处](../README.md)进入。
+Click [HERE](../README.md) to read the English documents.
+以下为中文文档内容。
 
-* 区块链知识
-
-  * 术语
-  * 基本原理
-
-* 官方资料
-
-  * 基本介绍
-  * 技术文档
-  * 扶持计划
-
-* 项目列表
-
-  
 
 ## 区块链知识
 
@@ -38,12 +25,12 @@ Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档
   * [比特币](http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)
 
   * [数字签名](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
+  
+  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
 
   * [糖果/空投](https://www.zhihu.com/question/263927879?from=groupmessage&isappinstalled=0)
 
   * [空气币](https://zhuanlan.zhihu.com/p/34389359?from=groupmessage&isappinstalled=0)
-
-  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
 
     
 
@@ -91,12 +78,17 @@ Ziiliqa资源列表，包括区块链知识、Zilliqa官方资料、技术文档
 
 * ### 官方
 
-  * [Zilliqa](https://github.com/Zilliqa)
+  * [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+  * [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+  * [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
 
-
+* ### API
+  * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
+  
+  
 * ### SDK
-
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
   * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
+

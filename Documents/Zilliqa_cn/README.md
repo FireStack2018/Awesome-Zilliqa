@@ -42,4 +42,6 @@ Scilla正在积极研究和开发中，因此本文档中部分描述可能会�
   - [代数数据类型](./Scilla/代数数据类型.md)
 - [编译器介绍](./Scilla/编译器介绍.md)
 - [JSON-RPC接口文档](../JSON-RPC_cn/JSON-RPC_cn.md)
-
+- 测试网络
+  - [钱包](https://wallet.zilliqa.com/home)
+  - [浏览器](https://explorer.zilliqa.com/home)

@@ -6,22 +6,9 @@
 
 A curated list of awesome Zilliqa frameworks, libraries, and resources.
 
-Click [here](./Documents/README.md) to read the Chinese documents, English documents are as follow.
+点击[这里](./Documents/README.md)查看中文文档。
+English documents are as follow.
 
-* Basics
-
-  * Terms
-  * Theory
-
-* Documents
-
-  * Introduction
-  * Technical Docs
-  * Financial Grant
-
-* Github
-
-  
 
 ## Basics
 
@@ -92,12 +79,16 @@ Click [here](./Documents/README.md) to read the Chinese documents, English docum
 
 * ### Official Repository
 
-  * [Zilliqa](https://github.com/Zilliqa)
+  * [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+  * [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+  * [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
 
+* ### API
+  * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
 
-* ### Repositories of SDK
 
+* ### SDK
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
   * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
