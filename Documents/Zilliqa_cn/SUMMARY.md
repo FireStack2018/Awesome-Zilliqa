@@ -8,5 +8,5 @@
     * [Scilla合约架构](./Scilla/Scilla合约架构.md)
     * [原生数据类型&操作](./Scilla/原生数据类型&操作.md)
     * [代数数据类型](./Scilla/代数数据类型.md)
-* [编译器介绍](./Scilla/编译器介绍.md)
+* [解释器介绍](./Scilla/解释器介绍.md)
 
