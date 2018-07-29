@@ -1,0 +1,62 @@
+(* HelloWorld contract *)
+(* "(*...*)"表示注释 *)
+
+(***************************************************)
+(*               Associated library                *)
+(***************************************************)
+(* 声明HelloWorld库 *)
+library HelloWorld
+
+(* one_msg函数创建一个Message类型的列表 *)
+let one_msg = 
+  fun (msg : Message) => 
+  (* Nil{Message}表示创建了一个Message类型的空列表 *)
+  let nil_msg = Nil {Message} in
+  (* Cons...表示在Message类型的列表nil_msg头部插入msg作为列表项 *)
+  Cons {Message} msg nil_msg
+
+(* 定义错误代码，not_owner_code的是32位整型的1，set_hello_code的是2 *)
+let not_owner_code = Int32 1
+let set_hello_code = Int32 2
+
+(***************************************************)
+(*             The contract definition             *)
+(***************************************************)
+(* contract定义合约 *)
+contract HelloWorld
+(* (vname: vtype)定义合约中的不可变变量 *)
+(owner: Address)
+
+(* field vame: vtype = ""，定义合约中的可变变量，默认为空值 *)
+field welcome_msg : String = ""
+
+(* transition定义setHello，含msg参数，类型为String *)
+transition setHello (msg : String)
+  (* builtin eq为内置函数，判断owner是否等于_sender *)
+  is_owner = builtin eq owner _sender;
+  (* match z with...| x =>...| y =>...end， 判断逻辑分支，类似其他语言的if-then-else语句 *)
+  match is_owner with
+  | False =>
+    (* 定义msg，包含_tag, _recipient, _amount, _code四种参数 *)
+    msg = {_tag : "Main"; _recipient : _sender; _amount : Uint128 0; code : not_owner_code};
+    (* one_msg是实用函数，表示创建一个消息列表并插入至msg中 *)
+    msgs = one_msg msg;
+    (* 发送消息 *)
+    send msgs
+  | True =>
+    (* 将msg消息内容赋值给可变变量welcome_msg，msg消息内容在Message.json内已定义好 *)
+    welcome_msg := msg;
+    msg = {_tag : "Main"; _recipient : _sender; _amount : Uint128 0; code : set_hello_code};
+    msgs = one_msg msg;
+    send msgs
+  end
+end
+
+(* transition定义getHello，不含参数 *)
+transition getHello ()
+  (* 可变变量r读取welcome_msg的值 *)
+  r <- welcome_msg;
+  msg = {_tag : "Main"; _recipient : _sender; _amount : Uint128 0; msg : r};
+  msgs = one_msg msg;
+  send msgs
+end
