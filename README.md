@@ -50,6 +50,7 @@ English documents are as follow.
   * [Official Website](https://zilliqa.com/)
   * [Zilliqa Blog](https://blog.zilliqa.com/@xinshu)
   * [Zilliqa Whitepaper v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+  * [Scilla Website](http://scilla-lang.org/)
 
   
 
