@@ -10,6 +10,7 @@ A curated list of awesome Zilliqa frameworks, libraries, and resources.
 English documents are as follow.
 
 
+
 ## Basics
 
 * ### Terms
@@ -49,6 +50,7 @@ English documents are as follow.
   * [Official Website](https://zilliqa.com/)
   * [Zilliqa Blog](https://blog.zilliqa.com/@xinshu)
   * [Zilliqa Whitepaper v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+  * [Scilla Website](http://scilla-lang.org/)
 
   
 
@@ -93,3 +95,4 @@ English documents are as follow.
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
   * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
 
+ 

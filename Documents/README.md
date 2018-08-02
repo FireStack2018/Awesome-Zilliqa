@@ -10,6 +10,7 @@ Click [HERE](../README.md) to read the English documents.
 以下为中文文档内容。
 
 
+
 ## 区块链知识
 
 * ### 术语表
@@ -25,12 +26,12 @@ Click [HERE](../README.md) to read the English documents.
   * [比特币](http://www.ruanyifeng.com/blog/2018/01/bitcoin-tutorial.html)
 
   * [数字签名](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
-  
-  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
 
   * [糖果/空投](https://www.zhihu.com/question/263927879?from=groupmessage&isappinstalled=0)
 
   * [空气币](https://zhuanlan.zhihu.com/p/34389359?from=groupmessage&isappinstalled=0)
+
+  * [智能合约](https://github.com/EthFans/wiki/wiki/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6)
 
     
 
@@ -49,6 +50,7 @@ Click [HERE](../README.md) to read the English documents.
   * [官网](https://zilliqa.com/)
   * [博客](https://blog.zilliqa.com/@xinshu)
   * [白皮书 v1.0](https://docs.zilliqa.com/whitepaper.pdf)
+  * [Scilla语言](http://scilla-lang.org/)
 
   
 
@@ -85,8 +87,7 @@ Click [HERE](../README.md) to read the English documents.
 
 * ### API
   * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
-  
-  
+
 * ### SDK
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)

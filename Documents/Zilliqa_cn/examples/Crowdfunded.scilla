@@ -1,0 +1,231 @@
+(***************************************************)
+(*               Associated library                *)
+(***************************************************)
+
+import BoolUtils
+
+library Crowdfunding
+
+let one_msg = 
+  (* 定义带msg参数的函数 *)
+  fun (msg : Message) => 
+    (* 创建一个Message类型的空列表 *)
+    let nil_msg = Nil {Message} in
+    (* msg作为列表首项 *)
+    Cons {Message} msg nil_msg
+    
+let check_update = 
+  fun (bs : Map Address Uint128) =>
+  fun (_sender : Address) =>
+  fun (_amount : Uint128) =>
+    (* builtin contains表示判断键_sender是否存在于映射bs中，返回bool *)
+    let c = builtin contains bs _sender in
+    (* 逻辑分支，判断c是False还是True *)
+    match c with 
+    (*  *)
+    | False => 
+      (* 在映射bs中插入key: value = _sender:_amount，存入bs1 *)
+      let bs1 = builtin put bs _sender _amount in
+      (* 构造了一个Map Address Uint128类型参数的Option *)
+      Some {Map Address Uint128} bs1
+    | True  => 
+      (* 构造了一个没有Map Address Uint128类型值的Option *)
+      None {Map Address Uint128}
+    end
+
+let blk_leq =
+  fun (blk1 : BNum) =>
+  fun (blk2 : BNum) =>
+    (* 判断blk1是否小于blk2 *)
+    let bc1 = builtin blt blk1 blk2 in 
+    (* 判断blk1是否等于blk2 *)
+    let bc2 = builtin eq blk1 blk2 in 
+    (* 判断满足bc1或bc2任一情况 *)
+    orb bc1 bc2
+
+(* 定义错误代码 *)
+(* 接受捐款，1 *)
+(* 已超过众筹截止时间，2 *)
+(* 已捐款，3 *)
+(* 非项目发起人，4 *)
+(* 还没到截止时间，5 *)
+(* 有捐款，6 *)
+(* 没有捐款，7 *)
+(* 不能申请退款，8 *)
+(* 申请退款，9 *)
+let accepted_code = Int32 1
+let missed_deadline_code = Int32 2
+let already_backed_code  = Int32 3
+let not_owner_code  = Int32 4
+let too_early_code  = Int32 5
+let got_funds_code  = Int32 6
+let cannot_get_funds  = Int32 7
+let cannot_reclaim_code = Int32 8
+let reclaimed_code = Int32 9
+  
+(***************************************************)
+(*             The contract definition             *)
+(***************************************************)
+(* contract定义Crowdfunding合约 *)
+contract Crowdfunding
+
+(*  定义不可变变量 *)
+(owner     : Address,
+ max_block : BNum,
+ goal      : Uint128)
+
+(* 定义可变变量 *)
+(* 定义捐款者 *)
+field backers : Map Address Uint128 = Emp Address Uint128
+(* 定义funded默认为False，即发起人未获得捐款 *)
+field funded : Bool = False
+
+(* 捐款transition：Donate *)
+transition Donate ()
+  (* blk从BLOCKNUMBER中读取区块号 *)
+  blk <- & BLOCKNUMBER;
+  (* 用库中定义的blk_leq函数，判断当前区块号是否<=最大区块号 *)
+  in_time = blk_leq blk max_block;
+  (* 根据in_time结果走逻辑分支 *)
+  match in_time with 
+  (* 当前区块号<=最大区块号 *)
+  | True  => 
+    (* bs从backers中读取值 *)
+    bs  <- backers;
+    (* 判断bs是否存在于_sender中 *)
+    res = check_update bs _sender _amount;
+    (* 根据res结果走逻辑分支 *)
+    match res with
+    (* bs存在，返回了None *)
+    | None => 
+      msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0; 
+              code : already_backed_code};
+      msgs = one_msg msg;
+      send msgs
+    (* bs不存在，返回了Some *)  
+    | Some bs1 =>
+      (* 将bs1赋值给backers *)
+      backers := bs1; 
+      (* 用accept明确接收款项 *)
+      accept; 
+      msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0; 
+              code : accepted_code};
+      msgs = one_msg msg;
+      send msgs     
+    end  
+  (* 当前区块号>最大区块号 *)
+  | False => 
+    msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0; 
+            code : missed_deadline_code};
+    msgs = one_msg msg;
+    send msgs
+  end 
+end
+
+(* 提取捐款transition：GetFunds *)
+transition GetFunds ()
+  is_owner = builtin eq owner _sender;
+  match is_owner with
+  | False => 
+    msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0;
+            code : not_owner_code};
+    msgs = one_msg msg;
+    send msgs
+  | True => 
+    (* blk从BLOCKNUMBER中读取区块号 *)
+    blk <- & BLOCKNUMBER;
+    (* in_time判断blk是否<=max_block *)
+    in_time = blk_leq blk max_block;
+    (* 对in_time逻辑取反，将结果赋值给c1 *)
+    c1 = negb in_time;
+    (* bal从balance读取账户余额 *)
+    bal <- balance;
+    (* 判断bal是否小于goal，布尔结果赋值给c2 *)
+    c2 = builtin lt bal goal;
+    (* 对c2逻辑取反，将结果赋值给c3 *)
+    c3 = negb c2;
+    (* 判断是否同时满足c1（即blk>max_block）与c3（即bal>goal），将结果赋值给c4 *)
+    c4 = andb c1 c3;
+    (*  *)
+    match c4 with 
+    (* 不满足c4条件，即众筹不成功或未达到目标，owner不能提取捐款 *)
+    | False =>  
+      msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0;
+              code : cannot_get_funds};
+      msgs = one_msg msg;
+      send msgs
+    (* 满足c4条件，即众筹完成，可以将捐款转给owner *)
+    | True => 
+      tt = True;
+      (* 将funded值改为True，将捐款发给发起人 *)
+      funded := tt;
+      msg  = {_tag : Main; _recipient : owner; _amount : bal; 
+              code : got_funds_code};
+      msgs = one_msg msg;
+      send msgs
+    end
+  end   
+end
+
+(* 发起退款transition：ClaimBack *)
+transition ClaimBack ()
+  blk <- & BLOCKNUMBER;
+  (* 判断max_block是否<blk，是则为超过众筹期限 *)
+  after_deadline = builtin blt max_block blk;
+  match after_deadline with
+  (* 未到众筹截止日期 *)
+  | False =>
+    msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0;
+            code : too_early_code};
+    msgs = one_msg msg;
+    send msgs
+  (* 众筹已截止 *)
+  | True =>
+    (* 读取捐款者 *)
+    bs <- backers;
+    (* 读取合约资金量 *)
+    bal <- _balance;
+    (* funded表示发起人是否已获得捐款，这里值为True *)
+    f <- funded;
+    (* 判断bal是否<goal，合约资金量是否小于众筹目标 *)
+    c1 = builtin lt bal goal;
+    (* 判断_sender是否存在于映射bs中，即判断当前账户是否在捐款者中 *)
+    c2 = builtin contains bs _sender;
+    (* 对f逻辑取反，表示发起人没有获得捐款 *)
+    c3 = negb f;
+    (* 同时满足c1与c2的结果赋值给c4，即合约资金量小于众筹目标，且当前账户是捐款者之一 *)
+    c4 = andb c1 c2;
+    (* 同时满足c3与c4的结果赋值给c5，即发起人未获得捐款，且众筹失败，当前账户是捐款者之一 *)
+    c5 = andb c3 c4;
+    match c5 with
+    (* 发起人已获得捐款，或众筹已成功，或当前账户不是捐款者之一，这三种情况不能申请退款 *)
+    | False =>
+      msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0;
+              code : cannot_reclaim_code};
+      msgs = one_msg msg;
+      send msgs
+    (* 发起人未获得捐款，且众筹失败，当前账户是捐款者之一 *)
+    | True =>
+      (* 获取映射bs中键_sender对应的值，值为option类型 *)
+      res = builtin get bs _sender;
+      match res with
+      (* _sender不在映射bs中 *)
+      | None =>
+        msg  = {_tag : ""; _recipient : _sender; _amount : Uint128 0;
+                code : cannot_reclaim_code};
+        msgs = one_msg msg;
+        send msgs
+      (* _sender在映射bs中 *)
+      | Some v =>
+        (* 从映射bs中删除_sender键值对 *)
+        bs1 = builtin remove bs _sender;
+        (* 删除_sender后的新映射bs1，赋值给backers *)
+        backers := bs1;
+        msg  = {_tag : Main; _recipient : _sender; _amount : v; 
+                code : reclaimed_code};
+        msgs = one_msg msg;
+        send msgs
+      end
+    end
+  end  
+end
