@@ -87,6 +87,8 @@ Click [HERE](../README.md) to read the English documents.
 
 * ### API
   * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
+  * [Webz.js](https://github.com/FireStack-Lab/webz.js)
+  * [Webz-examples](https://github.com/FireStack-Lab/webz-examples)
 
 * ### SDK
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
