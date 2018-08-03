@@ -88,6 +88,8 @@ English documents are as follow.
 
 * ### API
   * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
+  * [Webz.js](https://github.com/FireStack-Lab/webz.js)
+  * [Webz-examples](https://github.com/FireStack-Lab/webz-examples)
 
 
 * ### SDK
