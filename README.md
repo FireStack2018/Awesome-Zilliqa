@@ -50,15 +50,38 @@ English documents are as follow.
   * [Official Website](https://zilliqa.com/)
   * [Zilliqa Blog](https://blog.zilliqa.com/@xinshu)
   * [Zilliqa Whitepaper v1.0](https://docs.zilliqa.com/whitepaper.pdf)
-  * [Scilla Website](http://scilla-lang.org/)
 
   
 
 * ### Technical Docs
 
-  * [Scilla-doc](http://scilla.readthedocs.io/en/latest/)
-  * [JSON-RPC](https://apidocs.zilliqa.com/#introduction)
   * [SCILLA Technical paper](https://arxiv.org/pdf/1801.00687.pdf)
+  * [Scilla-docs](http://scilla.readthedocs.io/en/latest/)
+    * [Introduction](http://scilla.readthedocs.io/en/latest/intro.html)
+    * [Scilla trial](http://scilla.readthedocs.io/en/latest/scilla-trial.html)
+    * [Scilla by example](http://scilla.readthedocs.io/en/latest/scilla-by-example.html)
+    * [Scilla in depth](http://scilla.readthedocs.io/en/latest/scilla-in-depth.html)
+      - [Structure of a Scilla Contract](http://scilla.readthedocs.io/en/latest/scilla-in-depth.html#structure-of-a-scilla-contract)
+      - [Primitive Data Types & Operations](http://scilla.readthedocs.io/en/latest/scilla-in-depth.html#primitive-data-types-operations)
+      - [Algebraic Data Types (ADTs)](http://scilla.readthedocs.io/en/latest/scilla-in-depth.html#algebraic-data-types-adts)
+    * [Interface](http://scilla.readthedocs.io/en/latest/interface.html)
+  * [JSON-RPC](https://apidocs.zilliqa.com/#introduction)
+    * [GetBalance](https://apidocs.zilliqa.com/#getbalance)
+    * [GetDsBlock](https://apidocs.zilliqa.com/#getdsblock)
+    * [GetTxBlock](https://apidocs.zilliqa.com/#gettxblock)
+    * [GetLatestDsBlock](https://apidocs.zilliqa.com/#getlatestdsblock)
+    * [GetLatestTxBlock](https://apidocs.zilliqa.com/#getlatesttxblock)
+    * [GetTransaction](https://apidocs.zilliqa.com/#gettransaction)
+    * [CreateTransaction](https://apidocs.zilliqa.com/#createtransaction)
+    * [GetSmartContracts](https://apidocs.zilliqa.com/#getsmartcontracts)
+    * [GetSmartContractState](https://apidocs.zilliqa.com/#getsmartcontractstate)
+    * [GetSmartContractCode](https://apidocs.zilliqa.com/#getsmartcontractcode)
+    * [GetSmartContractinit](https://apidocs.zilliqa.com/#getsmartcontractinit)
+    * [GetBlockchainInfo](https://apidocs.zilliqa.com/#getblockchaininfo)
+    * [GetNetworkId](https://apidocs.zilliqa.com/#getnetworkid)
+    * [GetRecentTransactions](https://apidocs.zilliqa.com/#getrecenttransactions)
+    * [DSBlockListing](https://apidocs.zilliqa.com/#dsblocklisting)
+    * [TxBlockListing](https://apidocs.zilliqa.com/#txblocklisting)
 
   
 
@@ -88,8 +111,6 @@ English documents are as follow.
 
 * ### API
   * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
-  * [Webz.js](https://github.com/FireStack-Lab/webz.js)
-  * [Webz-examples](https://github.com/FireStack-Lab/webz-examples)
 
 
 * ### SDK
@@ -97,4 +118,4 @@ English documents are as follow.
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
   * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
 
- 
+  
