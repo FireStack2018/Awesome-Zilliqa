@@ -50,14 +50,38 @@ Click [HERE](../README.md) to read the English documents.
   * [官网](https://zilliqa.com/)
   * [博客](https://blog.zilliqa.com/@xinshu)
   * [白皮书 v1.0](https://docs.zilliqa.com/whitepaper.pdf)
-  * [Scilla语言](http://scilla-lang.org/)
 
   
 
 * ### 技术文档
 
   * [Zilliqa官方文档](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/Zilliqa_cn)
-  * [JSON-RPC](https://github.com/FireStack2018/Awesome-Zilliqa/tree/master/Documents/JSON-RPC_cn)
+    * [关于](./Zilliqa_cn/README.md)
+    * [Scilla设计原理](./Zilliqa_cn/Scilla/Scilla设计原理.md)
+    * [尝试Scilla](./Zilliqa_cn/Scilla/尝试Scilla.md)
+    * [Scilla入门](./Zilliqa_cn/Scilla/Scilla入门.md)
+    * Scilla进阶
+      - [Scilla合约架构](./Zilliqa_cn/Scilla/Scilla合约架构.md)
+      - [原生数据类型&操作](./Zilliqa_cn/Scilla/原生数据类型&操作.md)
+      - [代数数据类型](./Zilliqa_cn/Scilla/代数数据类型.md)
+    * [解释器介绍](./Zilliqa_cn/Scilla/解释器介绍.md)
+  * [JSON-RPC](./JSON-RPC_cn/JSON-RPC_cn.md)
+    * GetBalance
+    * GetDsBlock
+    * GetTxBlock
+    * GetLatestDsBlock
+    * GetLatestTxBlock
+    * GetTransaction
+    * CreateTransaction
+    * GetSmartContracts
+    * GetSmartContractState
+    * GetSmartContractCode
+    * GetSmartContractinit
+    * GetBlockchainInfo
+    * GetNetworkId
+    * GetRecentTransactions
+    * DSBlockListing
+    * TxBlockListing
 
   
 
@@ -87,11 +111,11 @@ Click [HERE](../README.md) to read the English documents.
 
 * ### API
   * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
-  * [Webz.js](https://github.com/FireStack-Lab/webz.js)
-  * [Webz-examples](https://github.com/FireStack-Lab/webz-examples)
 
 * ### SDK
   * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
   * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
   * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
+
+
 
