@@ -109,7 +109,7 @@ Click [HERE](../README.md) to read the English documents.
 * [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
 ### Web3
-**1. [Web3.js](https://github.com/FireStack-Lab/webz.js) ** - Web3.js是一个库集，将允许您与本地或Zilliqa代理节点进行交互。
+**1. [Web3.js](https://github.com/FireStack-Lab/webz.js)** - Web3.js是一个库集，将允许您与本地或Zilliqa代理节点进行交互。
 
 **2. [Web3.go](https://github.com/GincoInc/zillean)** - Web3库的go版本。
 
