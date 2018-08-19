@@ -102,20 +102,66 @@ English documents are as follow.
 
 ## Github
 
-* ### Official Repository
+### Official Repos
 
-  * [Zilliqa](https://github.com/Zilliqa/Zilliqa)
-  * [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
-  * [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
+* [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+* [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+* [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
+
+### 
+
+### Web3
+
+**1. [Web3.js by FireStack](https://github.com/FireStack-Lab/webz.js)** - Web3.js is a collection of libraries which will allow you to interact with a local or delegated Zilliqa node.
+
+**2. [Web3.go by Ginco](https://github.com/GincoInc/zillean)** - Go version of Web3 libraries.
 
 
-* ### API
-  * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
+
+### **Wallets**
+
+**1. Swift Wallet by Alexander Cyon** - An iOS wallet for sending/receiving ZIL native tokens and interacting with smart contracts.
+
+https://github.com/OpenZesame/Zilliqa-Swift-SDK
+
+https://github.com/OpenZesame/Zilliqa-Wallet-iOS
+
+https://github.com/Sajjon/SwiftCrypto
+
+**2. [A Secure Multi-party Computation (SMPC) Protocol Wallet by Kzen Networks](https://github.com/KZen-networks)** - A wallet based on applying Secure Multi-party Computation to distribute key generation and transaction signing to multiple parties with no change to the Zilliqa protocol.
+
+**3. [Unity Wallet by Jonas Jia](https://github.com/jonas0110/unity3d-zilliqa-wallet)** - A Unity3D gaming engine wallet for game developers to utilise in order to create blockchain-based games.
 
 
-* ### SDK
-  * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
-  * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
-  * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
 
-  
+### **Extensions**
+
+**1. [Browser Extension by Greenrain](https://github.com/qaidjohar/Zilliqa-Browser-Extension)** - A Chrome Web extension for sending/receiving ZIL native tokens and interacting with smart contracts on the Zilliqa blockchain.
+
+**2. [Web Extension](https://github.com/appbery/Zilliqa-Chrome-Wallet)** - A Chrome Web extension for sending/receiving ZIL native tokens and interacting with smart contracts on the Zilliqa blockchain.
+
+
+
+### **Libraries**
+
+**1. [Smart contract libraries by Merkalize](https://github.com/vaibhavchellani/scilla-vanilla)** - A repository of reusable smart contracts for smart contract developers to utilise in their dApp development.
+
+
+
+### **Scilla Language Server**
+
+**1. [Scilla Language Server implementation](https://github.com/czarly/scilla-language-server)** - A language analyzer for Scilla that enables code completion/hover/diagnostics etc., for your favorite IDE.
+
+
+
+### **Games**
+
+**1. [EMONT Frenzy by EMONT Alliance](https://github.com/Etheremonn/emont-frenzy)** - A decentralised underwater game where players enter as fish to collect tokens and battle with others.
+
+**2. [The World of Swordsmen](https://github.com/jonas0110/zilwuxia)** - Relive the ancient Chinese dynasty as warriors in this fantasy MMORPG game. Collectibles like secret manuals and weapons are tradeable in tokenized form and your legacy is etched forever on the Zilliqa blockchain.
+
+
+
+### **Other Applications**
+
+**1. [BTCT期货](https://github.com/DRI-network/)** - A cross-chain protocol for BTC Token issuance on the Ethereum network and Zilliqa network. Zilliqa’s smart contracts to be utilised to fully support Swingby’s Futures contracts and atomic swaps.
