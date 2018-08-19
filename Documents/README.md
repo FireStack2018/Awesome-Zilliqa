@@ -104,9 +104,9 @@ Click [HERE](../README.md) to read the English documents.
 
 ### 官方
 
-* [Zilliqa](https://github.com/Zilliqa/Zilliqa)
-* [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
-* [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
+1. [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+2. [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+3. [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
 ### Web3
 **1. [Web3.js](https://github.com/FireStack-Lab/webz.js)** - Web3.js是一个库集，将允许您与本地或Zilliqa代理节点进行交互。
