@@ -104,9 +104,9 @@ English documents are as follow.
 
 ### Official Repos
 
-* [Zilliqa](https://github.com/Zilliqa/Zilliqa)
-* [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
-* [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
+1. [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+2. [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+3. [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
 ### 
 
@@ -164,4 +164,4 @@ https://github.com/Sajjon/SwiftCrypto
 
 ### **Other Applications**
 
-**1. [BTCT期货](https://github.com/DRI-network/)** - A cross-chain protocol for BTC Token issuance on the Ethereum network and Zilliqa network. Zilliqa’s smart contracts to be utilised to fully support Swingby’s Futures contracts and atomic swaps.
+**1. [BTCT Futures by Swingby](https://github.com/DRI-network/)** - A cross-chain protocol for BTC Token issuance on the Ethereum network and Zilliqa network. Zilliqa’s smart contracts to be utilised to fully support Swingby’s Futures contracts and atomic swaps.
