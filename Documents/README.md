@@ -102,20 +102,63 @@ Click [HERE](../README.md) to read the English documents.
 
 ## 项目列表
 
-* ### 官方
+### 官方
 
-  * [Zilliqa](https://github.com/Zilliqa/Zilliqa)
-  * [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
-  * [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
+* [Zilliqa](https://github.com/Zilliqa/Zilliqa)
+* [Zilliqa-JavaScript-Library](https://github.com/Zilliqa/Zilliqa-JavaScript-Library)
+* [Zilliqa-Wallet](https://github.com/Zilliqa/Zilliqa-Wallet) 
 
+### Web3
+**1. [Web3.js](https://github.com/FireStack-Lab/webz.js) ** - Web3.js是一个库集，将允许您与本地或Zilliqa代理节点进行交互。
 
-* ### API
-  * [Zilliqa-NodeJS-API](https://github.com/Inmediate/Zilliqa-NodeJS-API)
-
-* ### SDK
-  * [react-native-zilliqa](https://github.com/FireStack-Lab/react-native-zilliqa)
-  * [Zilliqa-Swift-SDK](https://github.com/OpenZesame/Zilliqa-Swift-SDK)
-  * [unity3d-zilliqa-wallet](https://github.com/jonas0110/unity3d-zilliqa-wallet)
+**2. [Web3.go](https://github.com/GincoInc/zillean)** - Web3库的go版本。
 
 
 
+### **钱包**
+
+**1. Swift钱包** - iOS版钱包，用于发送和接收Zil并与智能合约交互，有如下三个repo：
+
+https://github.com/OpenZesame/Zilliqa-Swift-SDK
+
+https://github.com/OpenZesame/Zilliqa-Wallet-iOS
+
+https://github.com/Sajjon/SwiftCrypto
+
+**2. [一个安全的多方计算（SMPC）协议钱包](https://github.com/KZen-networks)** - 一个基于应用安全多方计算的钱包，将密钥生成和交易签名分发给多方而不改变Zilliqa的协议。
+
+**3. [Unity钱包](https://github.com/jonas0110/unity3d-zilliqa-wallet)** - Unity3D游戏引擎钱包，供游戏开发者创建基于区块链的游戏使用。
+
+
+
+### **扩展**
+
+**1. [浏览器扩展](https://github.com/qaidjohar/Zilliqa-Browser-Extension)** - 一个Chrome Web扩展，用于发送和接收Zil并与Zilliqa链上的智能合约进行交互。
+
+**2. [Web扩展](https://github.com/appbery/Zilliqa-Chrome-Wallet)** - 一个Chrome Web扩展，用于发送和接收Zil并与Zilliqa链上的智能合约进行交互。
+
+
+
+### **库**
+
+**1. [智能合约库](https://github.com/vaibhavchellani/scilla-vanilla)** - 智能合约开发人员在其分布式应用开发中使用的可重用智能合约存储库。
+
+
+
+### **Scilla语言服务器**
+
+**1. [Scilla语言服务器的部署](https://github.com/czarly/scilla-language-server)** - Scilla的语言分析器，使你最喜欢的IDE可以进行代码完成、悬停、诊断等操作。
+
+
+
+### **游戏**
+
+**1. [EMONT Frenzy](https://github.com/Etheremonn/emont-frenzy)** - 一款去中心化的水下战斗游戏，玩家进入鱼群收集代币与他人战斗。
+
+**2. [武侠世界](https://github.com/jonas0110/zilwuxia)** - 这个奇幻的大型多人在线角色扮演游戏将让中国古代的侠士重生，秘密手册、武器等类似的收藏品可以用token交易，你的财产将永远铭刻在Zilliqa区块链上。
+
+
+
+### **其他应用**
+
+**1. [BTCT期货](https://github.com/DRI-network/)** - 在以太坊网络和Zilliqa网络上发行比特币的跨链协议。Zilliqa的智能合约将全面支持Swingby的期货合约和原子交换。
