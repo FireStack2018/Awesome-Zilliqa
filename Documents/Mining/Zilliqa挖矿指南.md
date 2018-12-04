@@ -61,7 +61,7 @@ Zilliqa挖矿节点的建议要求是：
  -  x64 Linux操作系统，如Ubuntu 16.04.5
  -  英特尔i5处理器或更高版本
  -  8GB DRR3 RAM或更高
- -  **（可选）**任何至少具有20 Mh / s的GPU卡[例如1 x GTX 1060,3GB专用RAM]
+ -  **（可选）** 任何至少具有20 Mh / s的GPU卡[例如1 x GTX 1060,3GB专用RAM]
 
 #### 对于OpenCL
 
@@ -119,7 +119,7 @@ Zilliqa挖矿节点的建议要求是：
 
    > 注意：如果您使用的是家用路由器，则很可能是在NAT环境中并且可以启用UPnP。但是，如果UPnP不起作用，则可以执行端口转发。
 
-   - **（选项1a）**在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
+   - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
 
      ```
      sudo apt-get install miniupnpc
@@ -133,13 +133,13 @@ Zilliqa挖矿节点的建议要求是：
 
      您将收到一条消息“网络上找到的UPNP设备列表：”**或**“网络上找不到IGD UPnP设备！”。前者意味着UPnP模式已成功启用，而后者意味着UPnP模式存在问题。如果您属于后一种情况，请参阅下面的**选项1b**。
 
-   - **（选项1b）**单端口在路由器菜单中转发本地计算机IP。您可以在路由器菜单的TCP / UDP协议中**同时**将`30303`设置为外部端口（端口范围），`30303`设置为内部端口（本地端口），您可以在[此处](https://www.linksys.com/us/support-article?articleNum=136711)找到示例。然后，您可以使用命令提示符找出您的路由器IP地址：
+   - **（选项1b）** 单端口在路由器菜单中转发本地计算机IP。您可以在路由器菜单的TCP / UDP协议中同时将`30303`设置为外部端口（端口范围），`30303`设置为内部端口（本地端口），您可以在[此处](https://www.linksys.com/us/support-article?articleNum=136711)找到示例。然后，您可以使用命令提示符找出您的路由器IP地址：
 
      ```
      curl https://ipinfo.io/ip
      ```
 
-   - **（选项2）**如果您的命令提示符中已有公共IP地址，请直接查找您的公共IP地址：
+   - **（选项2）** 如果您的命令提示符中已有公共IP地址，请直接查找您的公共IP地址：
 
      ```
      curl https://ipinfo.io/ip
@@ -149,13 +149,13 @@ Zilliqa挖矿节点的建议要求是：
 
 7. 在命令提示符下运行shell脚本以启动docker镜像。
 
-   - **（选项1）**用于CPU挖矿：
+   - **（选项1）** 用于CPU挖矿：
 
      ```
      ./launch_docker.sh
      ```
 
-   - **（选项2）**对于Nvidia GPU挖矿：
+   - **（选项2）** 对于Nvidia GPU挖矿：
 
      ```
      ./launch_docker.sh cuda
@@ -163,9 +163,9 @@ Zilliqa挖矿节点的建议要求是：
 
      支持使用[nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for Nvidia GPU。
 
-     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](https://github.com/Zilliqa/Zilliqa/wiki/Mining#for-multiple-gpus)的说明修改*constants.xml*文件。
+     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
-     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](https://github.com/Zilliqa/Zilliqa/wiki/Mining#steps-for-mining-natively)在本地构建Zilliqa，而不是使用docker。
+     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)在本地构建Zilliqa，而不是使用docker。
 
 ---
 
@@ -280,19 +280,19 @@ Zilliqa挖矿节点的建议要求是：
      libprotobuf-dev protobuf-compiler libcurl4-openssl-dev
      ```
 
-   - **（选项1）**构建Zilliqa用于CPU挖矿
+   - **（选项1）** 构建Zilliqa用于CPU挖矿
 
      ```
      ./build.sh
      ```
 
-   - **（选项2）**使用CUDA为Nvidia GPU挖矿构建Zilliqa
+   - **（选项2）** 使用CUDA为Nvidia GPU挖矿构建Zilliqa
 
      ```
      ./build.sh cuda
      ```
 
-   - **（选项3）**使用OpenCL构建用于AMD GPU挖矿的Zilliqa
+   - **（选项3）** 使用OpenCL构建用于AMD GPU挖矿的Zilliqa
 
      ```
      ./build.sh opencl
@@ -316,17 +316,17 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-12. 编辑***constants.xml***并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
+12. 编辑*constants.xml*并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
 
 ---
 
-13. **（可选）**如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑***constants.xml***并更改以下内容：
+13. **（可选）** 如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
     - **对于Nvidia GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。 将`CUDA_GPU_MINE`参数从`false`更改为`true`。
 
-      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改***constants.xml***文件。
+      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
 ---
 
@@ -336,7 +336,7 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：如果您使用的是家用路由器，则很可能是在NAT环境中并且可以启用UPnP。但是，如果UPnP不起作用，则可以执行端口转发。
 
-    - **（选项1a）**在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，在[这里](https://routerguide.net/how-to-enable-upnp-for-rt-ac66u/)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
+    - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，在[这里](https://routerguide.net/how-to-enable-upnp-for-rt-ac66u/)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
 
       ```
       sudo apt-get install miniupnpc
@@ -350,13 +350,13 @@ Zilliqa挖矿节点的建议要求是：
 
       您将收到一条消息“网络上找到的UPNP设备列表：**”或**“网络上找不到IGD UPnP设备！”。前者意味着UPnP模式已成功启用，而后者意味着UPnP模式存在问题。如果您属于后一种情况，请参阅下面的**选项1b**。
 
-    - **（选项1b）**单端口在路由器菜单中转发本地计算机IP。您可以在路由器菜单的TCP / UDP协议中**同时**将`30303`设置为外部端口（端口范围），`30903`设置为内部端口（本地端口），您可以在[此处](https://www.linksys.com/us/support-article?articleNum=136711)找到示例。然后，您可以使用命令提示符找出您的路由器IP地址：
+    - **（选项1b）** 单端口在路由器菜单中转发本地计算机IP。您可以在路由器菜单的TCP / UDP协议中同时将`30303`设置为外部端口（端口范围），`30903`设置为内部端口（本地端口），您可以在[此处](https://www.linksys.com/us/support-article?articleNum=136711)找到示例。然后，您可以使用命令提示符找出您的路由器IP地址：
 
       ```
       curl https://ipinfo.io/ip
       ```
 
-    - **（选项2）**如果您的命令提示符中已有公共IP地址，请直接查找您的公共IP地址：
+    - **（选项2）** 如果您的命令提示符中已有公共IP地址，请直接查找您的公共IP地址：
 
       ```
       curl https://ipinfo.io/ip
