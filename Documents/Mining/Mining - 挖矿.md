@@ -2,7 +2,7 @@
 Zilliqa官方挖矿指南（中文版），FireStack团队翻译。
 
 
-# 采矿指南
+# 挖矿指南
 
 ## 一般信息
 
@@ -10,7 +10,7 @@ Zilliqa官方挖矿指南（中文版），FireStack团队翻译。
 
  - [推荐的硬件要求](https://github.com/Zilliqa/Zilliqa/wiki/Mining#hardware-requirement-for-mao-shan-wang-测试网络)
  - [使用码头挖矿的步骤](https://github.com/Zilliqa/Zilliqa/wiki/Mining#steps-for-mining-with-docker-for-cpu-or-nvidia-gpus-only)
- - [本地采矿的步骤](https://github.com/Zilliqa/Zilliqa/wiki/Mining#steps-for-mining-natively)
+ - [本地挖矿的步骤](https://github.com/Zilliqa/Zilliqa/wiki/Mining#steps-for-mining-natively)
 
 
 
@@ -56,7 +56,7 @@ Zilliqa官方挖矿指南（中文版），FireStack团队翻译。
 
 我们目前支持AMD（使用OpenCL）和Nvidia（使用CUDA）GPU。
 
-Zilliqa采矿节点的建议要求是：
+Zilliqa挖矿节点的建议要求是：
 
  -  x64 Linux操作系统，如Ubuntu 16.04.5
  -  英特尔i5处理器或更高版本
@@ -75,7 +75,7 @@ Zilliqa采矿节点的建议要求是：
 
 如果您有多个OpenCL或CUDA GPU，它们可以同时工作。请编辑位于“join”文件夹中的*constants.xml*文件中的`GPU_TO_USE参数`，以选择您希望使用的GPU数量。
 
-索引从`0`开始，您可以选择一个或多个GPU。例如，1个GPU为`0`，3个GPU为`0,1,2`或`0,2,4`。确保最大的索引与您在采矿设备中物理上的GPU数量相对应。
+索引从`0`开始，您可以选择一个或多个GPU。例如，1个GPU为`0`，3个GPU为`0,1,2`或`0,2,4`。确保最大的索引与您在挖矿设备中物理上的GPU数量相对应。
 
 
 
@@ -155,7 +155,7 @@ Zilliqa采矿节点的建议要求是：
      ./launch_docker.sh
      ```
 
-   - **（选项2）**对于Nvidia GPU采矿：
+   - **（选项2）**对于Nvidia GPU挖矿：
 
      ```
      ./launch_docker.sh cuda
@@ -202,7 +202,7 @@ Zilliqa采矿节点的建议要求是：
 
 
 
-## 本地采矿的步骤
+## 本地挖矿的步骤
 
 1. 为Zilliqa创建一个新目录：
 
