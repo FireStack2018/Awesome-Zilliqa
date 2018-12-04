@@ -1,5 +1,5 @@
 # 挖矿
-Zilliqa官方挖矿指南（中文版）率先发布，FireStack团队翻译。
+Zilliqa官方挖矿指南（中文版）率先发布，由FireStack团队翻译。
 
 
 # 挖矿指南
@@ -320,7 +320,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-13. **（可选）**如果您希望使用GPU，请安装[上面](https://github.com/Zilliqa/Zilliqa/wiki/Mining#hardware-requirement-for-mao-shan-wang-测试网络)的驱动程序。然后请编辑***constants.xml***并更改以下内容：
+13. **（可选）**如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑***constants.xml***并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
