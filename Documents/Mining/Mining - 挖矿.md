@@ -93,7 +93,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-3. （可选）[如上所述](https://github.com/Zilliqa/Zilliqa/wiki/Mining#for-cuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
+3. （可选）[如上所述](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8Ecuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
 
 ---
 
