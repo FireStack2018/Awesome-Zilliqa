@@ -1,12 +1,12 @@
 # 挖矿
-Zilliqa官方挖矿指南（中文版），FireStack团队翻译。
+Zilliqa官方挖矿指南（中文版）率先发布，FireStack团队翻译。
 
 
 # 挖矿指南
 
 ## 一般信息
 
-欢迎来到代号为Mao Shan Wang的Zilliqa测试网络-v3。我们邀请所有矿工成为公共节点，加入到猫山王的测试网络中。希望这次能让大家熟悉工作流程，并帮助我们在2019年1月底之前发现主网上线之前的潜在漏洞。我们还鼓励所有社区开发人员加入猫山王测试网，以便更好地了解Zilliqa的网络架构。
+欢迎来到代号为猫山王的Zilliqa测试网络-v3。我们邀请所有矿工成为公共节点，加入到猫山王的测试网络中。希望这次能让大家熟悉工作流程，并帮助我们在2019年1月底之前发现主网上线之前的潜在漏洞。我们还鼓励所有社区开发人员加入猫山王测试网，以便更好地了解Zilliqa的网络架构。
 
  - [推荐的硬件要求](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)
  - [使用docker挖矿的步骤](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E4%BD%BF%E7%94%A8docker%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Ecpu%E6%88%96nvidia-gpu)
@@ -119,7 +119,7 @@ Zilliqa挖矿节点的建议要求是：
 
    > 注意：如果您使用的是家用路由器，则很可能是在NAT环境中并且可以启用UPnP。但是，如果UPnP不起作用，则可以执行端口转发。
 
-   - **（选项1a）**在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://routerguide.net/how-to-enable-upnp-for-rt-ac66u/)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
+   - **（选项1a）**在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
 
      ```
      sudo apt-get install miniupnpc
@@ -326,7 +326,7 @@ Zilliqa挖矿节点的建议要求是：
 
     - **对于Nvidia GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。 将`CUDA_GPU_MINE`参数从`false`更改为`true`。
 
-      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/Zilliqa/Zilliqa/wiki/Mining#for-multiple-gpus)的说明修改***constants.xml***文件。
+      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Mining%20-%20%E6%8C%96%E7%9F%BF.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改***constants.xml***文件。
 
 ---
 
