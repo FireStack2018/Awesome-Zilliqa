@@ -276,9 +276,9 @@ Zilliqa挖矿节点的建议要求是：
 
 9. > **备注:** 如果你用 CPU 进行挖矿，请跳过此步骤.
 
-   **(可选)** 为 Nvidia GPUs 安装 CUDA 驱动，参看 [对于 CUDA 部分](#对于-CUDA)
+   **(可选)** 为 Nvidia GPUs 安装 CUDA 驱动，参看 [对于 CUDA 部分](#%E5%AF%B9%E4%BA%8Ecuda)
 
-   **(可选)** 为 AMD GPU 安装 OpenCL 驱动， 参看 [对于 OpenCL 部分](#对于-OpenCL).
+   **(可选)** 为 AMD GPU 安装 OpenCL 驱动， 参看 [对于 OpenCL 部分](#%E5%AF%B9%E4%BA%8Eopencl).
 
 ---
 
