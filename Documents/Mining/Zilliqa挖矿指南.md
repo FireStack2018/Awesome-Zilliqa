@@ -8,9 +8,9 @@ Zilliqa官方挖矿指南（中文版）率先发布，由FireStack团队翻译�
 
 欢迎来到代号为猫山王的Zilliqa测试网络-v3。我们邀请所有矿工成为公共节点，加入到猫山王的测试网络中。希望这次能让大家熟悉工作流程，并帮助我们在2019年1月底之前发现主网上线之前的潜在漏洞。我们还鼓励所有社区开发人员加入猫山王测试网，以便更好地了解Zilliqa的网络架构。
 
- - [推荐的硬件要求](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)
- - [使用docker挖矿的步骤](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E4%BD%BF%E7%94%A8docker%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Ecpu%E6%88%96nvidia-gpu)
- - [本地挖矿的步骤](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)
+ - [推荐的硬件要求](#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)
+ - [使用docker挖矿的步骤](#%E4%BD%BF%E7%94%A8docker%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4%E4%BB%85%E9%80%82%E7%94%A8%E4%BA%8Ecpu%E6%88%96nvidia-gpu)
+ - [本地挖矿的步骤](#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)
 
 
 
@@ -200,6 +200,8 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
 
+---
+
 11. 停止通过 docker 挖矿，[DOCKER NAME]是你的 Docker 名称:
 
     ```
@@ -271,6 +273,7 @@ Zilliqa挖矿节点的建议要求是：
    ```
 
 ---
+
 9. > **备注:** 如果你用 CPU 进行挖矿，请跳过此步骤.
 
    **(可选)** 为 Nvidia GPUs 安装 CUDA 驱动，参看 [对于 CUDA 部分](#对于-CUDA)
@@ -412,6 +415,8 @@ Zilliqa挖矿节点的建议要求是：
     第一个十六进制字符串是您的**公钥**，第二个十六进制字符串是您的**私钥**。
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
+
+---
 
 20. 停止本地挖矿，请输入:
     ```
