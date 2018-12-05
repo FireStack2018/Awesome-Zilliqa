@@ -200,7 +200,11 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
 
+11. 停止通过 docker 挖矿，[DOCKER NAME]是你的 Docker 名称:
 
+    ```
+    sudo docker stop [DOCKER NAME]
+    ```
 
 ## 本地挖矿的步骤
 
@@ -267,8 +271,15 @@ Zilliqa挖矿节点的建议要求是：
    ```
 
 ---
+9. > **备注:** 如果你用 CPU 进行挖矿，请跳过此步骤.
 
-9. 首先下载Zilliqa依赖项，然后构建Zilliqa用于CPU挖矿**或**GPU挖矿。
+   **(可选)** 为 Nvidia GPUs 安装 CUDA 驱动，参看 [对于 CUDA 部分](#对于-CUDA)
+
+   **(可选)** 为 AMD GPU 安装 OpenCL 驱动， 参看 [对于 OpenCL 部分](#对于-OpenCL).
+
+---
+
+10. 首先下载Zilliqa依赖项，然后构建Zilliqa用于CPU挖矿**或**GPU挖矿。
 
    - 首先，下载依赖项：
 
@@ -300,7 +311,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-10. 下载压缩的加入配置文件：
+11. 下载压缩的加入配置文件：
 
     ```
     cd ../join && wget https://testnet-join.zilliqa.com/configuration.tar.gz
@@ -308,7 +319,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-11. 解压缩压缩文件：
+12. 解压缩压缩文件：
 
     ```
     tar zxvf configuration.tar.gz
@@ -316,11 +327,11 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-12. 编辑*constants.xml*并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
+13. 编辑*constants.xml*并将`SCILLA_ROOT`参数更改为Scilla源目录的完整路径，如**步骤5**中所示。
 
 ---
 
-13. **（可选）** 如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
+14. **（可选）** 如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
@@ -330,7 +341,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-14. 如果您在NAT环境中分别使用**选项1a**或**选项1b**，则启用UPnP**或**执行单端口转发。
+15. 如果您在NAT环境中分别使用**选项1a**或**选项1b**，则启用UPnP**或**执行单端口转发。
 
     否则，如果您已经有公开的IP地址，请使用**选项2**查找当前的公共IP地址。
 
@@ -364,7 +375,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-15. 使用以下命令加入Zilliqa测试网络：
+16. 使用以下命令加入Zilliqa测试网络：
 
     ```
     ./launch.sh
@@ -372,7 +383,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-16. 系统将提示您输入以下详细信息：
+17. 系统将提示您输入以下详细信息：
 
     - `输入zilliqa源代码目录的完整路径：`*[键入您找到的路径第8步]*
 
@@ -382,7 +393,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-17. 你现在是猫山王测试网络的一名矿工。您可以使用以下方法监控进度：
+18. 你现在是猫山王测试网络的一名矿工。您可以使用以下方法监控进度：
 
     ```
     tail -f zilliqa-00001-log.txt
@@ -392,7 +403,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-18. 要检查本地生成的公钥和私钥对，可以在命令提示符中输入：
+19. 要检查本地生成的公钥和私钥对，可以在命令提示符中输入：
 
     ```
     less mykey.txt
@@ -402,7 +413,10 @@ Zilliqa挖矿节点的建议要求是：
 
     > 注意：密钥对是在磁盘上本地生成的。务必记住将私钥保存在安全的地方！
 
-
+20. 停止本地挖矿，请输入:
+    ```
+    pkill zilliqa
+    ```
 
 ## 讨论渠道和错误报告
 
