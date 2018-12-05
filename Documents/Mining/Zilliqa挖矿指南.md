@@ -93,7 +93,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-3. （可选）[如上所述](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8Ecuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
+3. （可选）[如上所述](#%E5%AF%B9%E4%BA%8Ecuda)安装Nvidia CUDA驱动程序。如果使用CPU进行挖矿，则可以跳过此步骤。
 
 ---
 
@@ -119,7 +119,7 @@ Zilliqa挖矿节点的建议要求是：
 
    > 注意：如果您使用的是家用路由器，则很可能是在NAT环境中并且可以启用UPnP。但是，如果UPnP不起作用，则可以执行端口转发。
 
-   - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
+   - **（选项1a）** 在家用路由器上启用UPnP模式。请谷歌你的家庭路由器设置，[这里](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)可以找到一个例子。您可以通过安装以下工具来检查是否已启用UPnP：
 
      ```
      sudo apt-get install miniupnpc
@@ -163,9 +163,9 @@ Zilliqa挖矿节点的建议要求是：
 
      支持使用[nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for Nvidia GPU。
 
-     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
+     > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
-     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)在本地构建Zilliqa，而不是使用docker。
+     > 注意：不幸的是，没有直接支持这种针对AMD GPU的docker构建。我们建议您按照以下[说明](#%E6%9C%AC%E5%9C%B0%E6%8C%96%E7%9F%BF%E7%9A%84%E6%AD%A5%E9%AA%A4)在本地构建Zilliqa，而不是使用docker。
 
 ---
 
@@ -334,13 +334,13 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-14. **（可选）** 如果您希望使用GPU，请安装[上面](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
+14. **（可选）** 如果您希望使用GPU，请安装[上面](#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
     - **对于Nvidia GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。 将`CUDA_GPU_MINE`参数从`false`更改为`true`。
 
-      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](https://github.com/FireStack2018/Awesome-Zilliqa/blob/master/Documents/Mining/Zilliqa%E6%8C%96%E7%9F%BF%E6%8C%87%E5%8D%97.md#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
+      > 注意：如果您希望同时运行多个GPU，则需要按照[此处](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
 ---
 
