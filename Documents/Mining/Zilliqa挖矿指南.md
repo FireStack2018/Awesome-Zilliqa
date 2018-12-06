@@ -100,7 +100,7 @@ Zilliqa挖矿节点的建议要求是：
 4. 在桌面中创建一个新目录并将目录更改为：
 
    ```
-   cd~ / Desktop && mkdir join && cd join
+   cd~ /Desktop && mkdir join && cd join
    ```
 
 ---
@@ -213,7 +213,7 @@ Zilliqa挖矿节点的建议要求是：
 1. 为Zilliqa创建一个新目录：
 
    ```
-   cd~ / Desktop && mkdir Zilliqa
+   cd~ /Desktop && mkdir Zilliqa
    ```
 
 ---
