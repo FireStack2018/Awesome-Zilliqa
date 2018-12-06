@@ -19,8 +19,6 @@ Zilliqa官方挖矿指南（中文版）率先发布，由FireStack团队翻译�
 猫山王测试网的自助最低难度等级为3。此难度级别是动态的，并根据竞争加入Zilliqa网络的节点数量进行调整。
 
 > 注意：难度级别是log2（难度）。
->
-
 
 
 #### 测试网络Epoch架构
@@ -45,9 +43,9 @@ Zilliqa官方挖矿指南（中文版）率先发布，由FireStack团队翻译�
 在Zilliqa网络中，奖励基于DS时期内节点完成的签名数量。由分片和DS节点提交的签名将获得相同的奖励。奖励被整合为一个DS时期，并在空白时期期间给出。
 
 例如，如果Zilliqa网络中总共有`1,200`个节点，并且每个DS Epoch的`COINBASE_REWARD`设置为`10,000,000` ZIL，则每个签名分配的奖励将是：
-
-    10,000,000 /（1,200 * 2/3 [成功签名者] * 99 [TX块]）= 每个签名126.262626262626263 ZIL
-
+```
+10,000,000 /（1,200 * 2/3 [成功签名者] * 99 [TX块]）= 每个签名126.262626262626263 ZIL
+```
 
 
 ## 猫山王测试网的硬件要求
@@ -65,15 +63,18 @@ Zilliqa挖矿节点的建议要求是：
 
 #### 对于OpenCL
 
-如果您希望将OpenCL支持的GPU用于PoW，请运行`sudo apt install ocl-icd-opencl-dev`来安装OpenCL开发人员包。
+如果您希望使用支持OpenCL的GPU进行PoW，请运行以下代码来安装OpenCL开发人员包。:
+```
+sudo apt install ocl-icd-opencl-dev
+```
 
 #### 对于CUDA
 
-如果您希望使用支持CUDA的GPU进行PoW，请从[NVIDIA官网](https://developer.nvidia.com/cuda-downloads)下载并安装CUDA软件包。您可能需要重新启动PC才能使安装生效。
+如果您希望使用支持CUDA的GPU进行PoW，请从[NVIDIA官网](https://developer.nvidia.com/cuda-downloads)下载与安装CUDA软件包。您可能需要重新启动PC才能使安装生效。
 
 #### 对于多GPU
 
-如果您有多个OpenCL或CUDA GPU，它们可以同时工作。请编辑位于“join”文件夹中的*constants.xml*文件中的`GPU_TO_USE参数`，以选择您希望使用的GPU数量。
+如果您有多个OpenCL或CUDA GPU，它们可以同时运作。请编辑位于“join”文件夹中的*constants.xml*文件中的`GPU_TO_USE`参数，以选择您希望使用的GPU数量。
 
 索引从`0`开始，您可以选择一个或多个GPU。例如，1个GPU为`0`，3个GPU为`0,1,2`或`0,2,4`。确保最大的索引与您在挖矿设备中物理上的GPU数量相对应。
 
@@ -100,7 +101,7 @@ Zilliqa挖矿节点的建议要求是：
 4. 在桌面中创建一个新目录并将目录更改为：
 
    ```
-   cd~ /Desktop && mkdir join && cd join
+   cd ~/Desktop && mkdir join && cd join
    ```
 
 ---
@@ -125,13 +126,13 @@ Zilliqa挖矿节点的建议要求是：
      sudo apt-get install miniupnpc
      ```
 
-     然后在命令行中输入：
+     然后在命令行后输入：
 
      ```
      upnpc -s
      ```
 
-     您将收到一条消息“网络上找到的UPNP设备列表：”**或**“网络上找不到IGD UPnP设备！”。前者意味着UPnP模式已成功启用，而后者意味着UPnP模式存在问题。如果您属于后一种情况，请参阅下面的**选项1b**。
+     您将收到一条消息 "List of UPNP devices found on the network :"**或**"No IGD UPnP Device found on the network !"。前者意味着UPnP模式已成功启用，而后者意味着UPnP模式存在问题。如果您属于后一种情况，请参阅下面的**选项1b**。
 
    - **（选项1b）** 单端口在路由器菜单中转发本地计算机IP。您可以在路由器菜单的TCP / UDP协议中同时将`30303`设置为外部端口（端口范围），`30303`设置为内部端口（本地端口），您可以在[此处](https://www.linksys.com/us/support-article?articleNum=136711)找到示例。然后，您可以使用命令提示符找出您的路由器IP地址：
 
@@ -155,13 +156,11 @@ Zilliqa挖矿节点的建议要求是：
      ./launch_docker.sh
      ```
 
-   - **（选项2）** 对于Nvidia GPU挖矿：
+   - **（选项2）** 对于Nvidia GPU挖矿，请先下载[nvidia-docker](https://github.com/NVIDIA/nvidia-docker)，然后：
 
      ```
-     ./launch_docker.sh cuda
+     ./launch_docker.sh --cuda
      ```
-
-     支持使用[nvidia-docker](https://github.com/NVIDIA/nvidia-docker) for Nvidia GPU。
 
      > 注意：如果您希望同时运行多个Nvidia GPU，则需要按照[此处](#%E5%AF%B9%E4%BA%8E%E5%A4%9Agpu)的说明修改*constants.xml*文件。
 
@@ -171,11 +170,11 @@ Zilliqa挖矿节点的建议要求是：
 
 8. 然后系统将提示您输入一些信息，如下所示：
 
-   - `为容器指定名称（默认值：zilliqa）：`[*如果使用默认值，请按**Enter**跳过*]
+   - `Assign a name to your container (default: zilliqa):`[*如果使用默认值，请按**Enter**跳过*]
 
-   - `输入您的IP地址（'NAT'或*。*。*。）：`[*键入**NAT**或您在步骤6中找到的公共IP地址*]
+   - `Enter your IP address ('NAT' or *.*.*.*):`[*键入**NAT**或您在步骤6中找到的公共IP地址*]
 
-   - `输入您的监听端口（默认值：30303）：`[*如果使用默认值，请按**Enter**跳过*]
+   - `Enter your listening port (default: 30303):`[*如果使用默认值，请按**Enter**跳过*]
 
 ---
 
@@ -213,7 +212,7 @@ Zilliqa挖矿节点的建议要求是：
 1. 为Zilliqa创建一个新目录：
 
    ```
-   cd~ /Desktop && mkdir Zilliqa
+   cd~ / Desktop && mkdir Zilliqa
    ```
 
 ---
@@ -334,7 +333,7 @@ Zilliqa挖矿节点的建议要求是：
 
 ---
 
-14. **（可选）** 如果您希望使用GPU，请安装[上面](#%E7%8C%AB%E5%B1%B1%E7%8E%8B%E6%B5%8B%E8%AF%95%E7%BD%91%E7%9A%84%E7%A1%AC%E4%BB%B6%E8%A6%81%E6%B1%82)的驱动程序。然后请编辑*constants.xml*并更改以下内容：
+14. **（可选）** 如果您希望使用GPU，请编辑*constants.xml*并更改以下内容：
 
     - **对于AMD GPU**：将`FULL_DATASET_MINE`参数从`false`更改为`true`。将`OPENCL_GPU_MINE`参数从`false`更改为`true`。
 
@@ -388,11 +387,11 @@ Zilliqa挖矿节点的建议要求是：
 
 17. 系统将提示您输入以下详细信息：
 
-    - `输入zilliqa源代码目录的完整路径：`*[键入您找到的路径第8步]*
+    - `Enter the full path of your zilliqa source code directory: `*[键入您找到的路径第8步]*
 
-    - `输入您的IP地址（NAT或*。*。*。*）：`*[键入**NAT**或您在步骤14中找到的IP地址]*
+    - `Enter your IP address (NAT or *.*.*.*): `*[键入**NAT**或您在步骤14中找到的IP地址]*
 
-    - `输入您的监听端口（默认值：30303）：`*[如果使用默认值，请按**Enter**跳过]*
+    - `Enter your listening port (default: 30303): `*[如果使用默认值，请按**Enter**跳过]*
 
 ---
 
