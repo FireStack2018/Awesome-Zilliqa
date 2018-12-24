@@ -260,7 +260,7 @@ sudo apt install ocl-icd-opencl-dev
 7. 克隆Zilliqa存储库并将目录更改为：
 
    ```
-   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout 6151a87
+   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout 4cb83d6
    ```
 
 ---
