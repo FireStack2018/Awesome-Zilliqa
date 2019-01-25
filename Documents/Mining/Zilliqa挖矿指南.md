@@ -212,7 +212,7 @@ sudo apt install ocl-icd-opencl-dev
 1. 为Zilliqa创建一个新目录：
 
    ```
-   cd~ / Desktop && mkdir Zilliqa
+   cd ~/Desktop && mkdir Zilliqa
    ```
 
 ---
