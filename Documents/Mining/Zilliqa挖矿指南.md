@@ -236,7 +236,7 @@ sudo apt install ocl-icd-opencl-dev
 4. 克隆Scilla存储库并将目录更改为：
 
    ```
-   git clone https://github.com/Zilliqa/Scilla.git Scilla && cd Scilla
+   git clone https://github.com/Zilliqa/Scilla.git Scilla && cd Scilla && git checkout v0.0.4
    ```
 
 ---
@@ -260,7 +260,7 @@ sudo apt install ocl-icd-opencl-dev
 7. 克隆Zilliqa存储库并将目录更改为：
 
    ```
-   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout 5b987fc
+   cd .. && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout v3.4.1
    ```
 
 ---
