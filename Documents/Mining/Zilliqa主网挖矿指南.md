@@ -16,7 +16,7 @@ Zilliqa主网官方挖矿指南（中文版）首发，由FireStack团队翻译�
 ### Epoch架构
 
 ![Zilliqa Epoch Architecture](https://i.imgur.com/Da4t6FW.png)
-在每个DS Epoch开始时，所有候选人都将运行工作证明（Ethash算法）过程`150`秒窗口，以便竞争加入Zilliqa网络。
+在每个DS Epoch开始时，所有候选人都将运行工作证明（Ethash算法）过程`60`秒窗口，以便竞争加入Zilliqa网络。
 
 - 满足`DS_POW_DIFFICULTY`参数的节点将能够作为DS节点加入。
 - 满足`POW_DIFFICULTY`参数的节点将作为分片节点加入。
@@ -37,13 +37,13 @@ Zilliqa的“工作证明”算法采用了[**Ethash**](https://github.com/ether
 
 ### 网络难度
 
-主网的自助最低难度等级为3。此难度级别是动态的，并根据每个DS epoch的提交目标值`1810`以`+/- 100`的幅度进行调整。
+主网的自助最低难度等级为`3`。此难度级别是动态的，并根据每个DS epoch的提交目标值`1810`以`+/- 100`的幅度进行调整。
 
 > 注意：难度级别是log2（难度）。
 
-假设网络中有`1810`个席位但是有`1910`个PoW提交，则下一个DS epoch的难度等级将增加1。
+假设网络中有`1810`个席位但是有`1910`个PoW提交，则下一个DS epoch的难度等级将增加`1`。
 
-假设网络中有`1810`个席位但是有`1710`个PoW提交，则下一个DS epoch的难度等级将减少1。
+假设网络中有`1810`个席位但是有`1710`个PoW提交，则下一个DS epoch的难度等级将减少`1`。
 
 ### 奖励机制
 
@@ -209,7 +209,7 @@ clinfo
    - `Enter your IP address ('NAT' or *.*.*.*):` 
 		[如果您使用选项1b，请输入您在步骤6中找到的IP地址 **或** NAT`]
 
-   - `Enter your listening port (default: 33333):`
+   - `Enter your listening port (default: 33133):`
 		[如果使用默认值，按 **输入**跳过]
 
 8. 您现在是Zilliqa主网的矿工。 您可以使用以下方式监控进度：
@@ -295,12 +295,11 @@ clinfo
 	- `输入您的IP地址（'NAT'或*.*.*.*）：`
 	[输入您在步骤5中找到的IP地址 **或**如果您在网络配置中选择了选项1b，则输入`NAT`]
 
-	- `输入你的监听端口（默认值：33333）：`
+	- `输入你的监听端口（默认值：33133）：`
 	[如果使用默认值，按 **输入**跳过]
 	
 9. 一旦CPU Zilliqa节点运行，您就可以在单独的GPU平台上安装 **Zilminer**：
-
-	- **对于Windows操作系统：** [**点击下载**](https://github.com/DurianStallSingapore/ZILMiner/releases/)
+	- **对于Windows操作系统（使用CUDA 10.0+）：** [**点击下载**](https://github.com/DurianStallSingapore/ZILMiner/releases/)
 	- **对于Ubuntu操作系统：** [**点击下载**](https://github.com/DurianStallSingapore/ZILMiner/releases/)
 
 10. 使用以下命令在单独的GPU装备上设置 **Zilminer**：
@@ -377,7 +376,7 @@ clinfo
 7. 克隆Zilliqa存储库并将目录更改为：
 
       ```
-      cd ~/Desktop && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout v4.0.0
+      cd ~/Desktop && git clone https://github.com/Zilliqa/Zilliqa.git Zilliqa && cd Zilliqa && git checkout v4.0.1
       ```
 
 8. 再次找出您的Zilliqa目录路径并写下来：
