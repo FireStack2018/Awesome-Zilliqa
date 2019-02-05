@@ -299,7 +299,6 @@ clinfo
 	[如果使用默认值，按 **输入**跳过]
 	
 9. 一旦CPU Zilliqa节点运行，您就可以在单独的GPU平台上安装 **Zilminer**：
-
 	- **对于Windows操作系统（使用CUDA 10.0+）：** [**点击下载**](https://github.com/DurianStallSingapore/ZILMiner/releases/)
 	- **对于Ubuntu操作系统：** [**点击下载**](https://github.com/DurianStallSingapore/ZILMiner/releases/)
 
